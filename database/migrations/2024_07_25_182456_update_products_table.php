@@ -12,4 +12,9 @@ return new class extends Migration
             $table->string('phone_number')->unique()->nullable()->change();
         });
     }
-    }
+};
+
+
+
+
+
