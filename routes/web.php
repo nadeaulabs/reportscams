@@ -15,3 +15,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+use App\Http\Controllers\PhoneNumberController;
+
+Route::get('/', [PhoneNumberController::class, 'index']);
+Route::post('/report', [PhoneNumberController::class, 'store'])->name('report.store');
