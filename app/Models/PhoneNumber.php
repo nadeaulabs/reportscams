@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class PhoneNumber extends Model
 {
     use HasFactory;
+    protected $fillable = ['name', 'altname', 'system', '_token', '_method'];
 }
